@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../../core/api/api.service';
 
 @Component({
   selector: 'app-info',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.less']
 })
 export class InfoComponent implements OnInit {
-
-  constructor() { }
+  title;
+  constructor(
+    private api: ApiService
+  ) { }
 
   ngOnInit() {
+    this.title = this.api.urlPrefix;
   }
 
 }

@@ -11,3 +11,10 @@
 > * shared   导入导出项目公用的第三方引用
 > * utils    项目工具合集
 
+##运行
+
+`ng s -c [environment] --port [port]`
+
+## 项目说明
+
+### angular6探索

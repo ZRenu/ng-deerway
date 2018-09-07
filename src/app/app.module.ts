@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
+import { ApiService, API_URL } from './core/api/api.service';
+import { environment } from '../environments/environment';
 
 registerLocaleData(zh);
 
@@ -30,7 +32,14 @@ registerLocaleData(zh);
     HttpClientModule,
     NgZorroAntdModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  providers: [
+    { provide: NZ_I18N, useValue: zh_CN },
+    ApiService,
+    {
+      provide: API_URL,
+      useValue: environment.urlPrefix
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
