@@ -1,0 +1,28 @@
+<form nz-form [formGroup]="form" class="login-form" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzPrefixIcon="anticon anticon-user">
+        <input type="text" nz-input formControlName="userName" placeholder="请输入账号">
+      </nz-input-group>
+      <nz-form-explain *ngIf="form.get('userName').dirty && form.get('userName').errors">请输入您的用户名！</nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzPrefixIcon="anticon anticon-lock">
+        <input type="password" nz-input formControlName="password" placeholder="请输入密码">
+      </nz-input-group>
+      <nz-form-explain *ngIf="form.get('password').dirty && form.get('password').errors">请输入您的密码！</nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+      <label nz-checkbox formControlName="remember">
+        <span>记住密码</span>
+      </label>
+      <a class="login-form-forgot" class="login-form-forgot">忘记密码</a>
+      <button nz-button class="login-form-button" [nzType]="'primary'" [nzLoading]="loading">{{loadingdesc}}</button>
+      <a href="">现在注册</a>
+    </nz-form-control>
+  </nz-form-item>
+</form>

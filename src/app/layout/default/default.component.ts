@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-default',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./default.component.less']
 })
 export class DefaultComponent implements OnInit {
+  isCollapsed = false;
+  triggerTemplate = null;
+  @ViewChild('trigger') customTrigger: TemplateRef<void>;
 
   constructor() { }
-
+  changeTrigger(): void {
+    this.triggerTemplate = this.customTrigger;
+  }
   ngOnInit() {
   }
-
 }

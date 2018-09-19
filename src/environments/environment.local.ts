@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    urlPrefix: 'http://localhost:8080/',
+    urlPrefix: 'https://www.yiyudata.com/api/',
 };
