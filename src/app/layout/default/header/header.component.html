@@ -1,6 +1,59 @@
-<nz-header style="display:flex;align-items:center">
-  <i class="iconfont" style="margin-right: 78px;margin-left: 90px;" *ngIf="!isCollapsed">&#xe67a;</i>
-  <i class="iconfont" *ngIf="isCollapsed" style="margin-left: 19px;margin-right: 43px;">&#xe603;</i>
-  <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="changeIcon()"
-    style="color: #fff"></i>
+<nz-header>
+  <div class="dw-logo" [ngStyle]="{'width':isCollapsed?'80px':'200px'}">
+    <i class="iconfont" *ngIf="!isCollapsed">&#xe67a;</i>
+    <i class="iconfont" *ngIf="isCollapsed">&#xe603;</i>
+  </div>
+  <div class="dw-inter-change" (click)="changeIcon()">
+    <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed"></i>
+  </div>
+  <div class="dw-inter">
+    <div class="dw-inter-left">
+      <div class="dw-inter-item" *ngIf="resize>500">
+        <a href="https://github.com/ZhouRenYou/ng-deerway" target="_blank"> <i class="anticon anticon-github"></i></a>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>900">
+        <i class="anticon anticon-calendar"></i>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>900">
+        <i class="anticon anticon-notification"></i>
+      </div>
+      <div class="dw-inter-search" *ngIf="resize>900">
+        <nz-input-group nzSuffixIcon="anticon anticon-search" [ngStyle]="{'width': resize < 1300 ? '200px':'400px'}">
+          <input type="text" nz-input placeholder="搜索：员工、文件、照片等">
+        </nz-input-group>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>1200">
+        <i class="anticon anticon-appstore-o"></i>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>1200">
+        <i class="anticon anticon-form"></i>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>1200">
+        <i class="anticon anticon-printer"></i>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>1200">
+        <i class="anticon anticon-contacts"></i>
+      </div>
+      <div class="dw-inter-item" *ngIf="resize>1200">
+        <i class="anticon anticon-message"></i>
+      </div>
+    </div>
+    <div class="dw-inter-right" *ngIf="resize>500">
+      <div class="dw-inter-item">
+        <nz-dropdown [nzPlacement]="'bottomCenter'">
+          <a nz-dropdown>
+            希孟
+          </a>
+          <ul nz-menu nzSelectable>
+            <li nz-menu-item>
+              <a>个人中心</a>
+            </li>
+            <li nz-menu-item (click)="logout()">
+              <a>退出</a>
+            </li>
+          </ul>
+        </nz-dropdown>
+      </div>
+    </div>
+  </div>
 </nz-header>

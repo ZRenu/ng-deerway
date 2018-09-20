@@ -3,7 +3,7 @@
 * 安装 angular 环境
 * 安装 ng-zorro 依赖
 
-## 演示地址
+## 演示地址(非实时更新)
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
 

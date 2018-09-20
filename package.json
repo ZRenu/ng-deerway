@@ -23,9 +23,11 @@
     "@delon/acl": "^1.4.0",
     "@delon/auth": "^1.4.0",
     "@delon/theme": "^1.4.0",
+    "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "ng-zorro-antd": "^1.4.1",
     "rxjs": "^6.0.0",
+    "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

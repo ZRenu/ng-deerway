@@ -26,10 +26,5 @@ export class InfoComponent implements OnInit {
         console.log(res);
       });
   }
-  logout() {
-    this.tokenService.clear();
-    // this.router.navigateByUrl(this.tokenService.login_url);
-    this.router.navigateByUrl('passport/login');
-  }
 
 }

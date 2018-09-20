@@ -1,4 +1,78 @@
 @import '../../../styles/icons.less';
 :host ::ng-deep .ant-layout-header {
     padding: 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    background: #1890ff !important;
+}
+
+// :host ::ng-deep .ant-input-affix-wrapper {
+//     width: 400px;
+// }
+
+.dw-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+
+.dw-inter {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+        font-size: 20px;
+    }
+    a {
+        outline: none;
+        color: #ffffff;
+    }
+    .dw-inter-left {
+        display: flex;
+        align-items: center;
+    }
+    .dw-inter-right {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .dw-inter-item {
+        padding: 0 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        &:hover {
+            height: 40px;
+            background: cornflowerblue;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+    .dw-inter-search {
+        margin-right: 5px;
+    }
+}
+
+.dw-inter-change {
+    height: 40px;
+    i {
+        font-size: 20px;
+    }
+    &:hover {
+        height: 40px;
+        background: cornflowerblue;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
 }
