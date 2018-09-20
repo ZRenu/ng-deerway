@@ -1,0 +1,6 @@
+<nz-header style="display:flex;align-items:center">
+  <i class="iconfont" style="margin-right: 78px;margin-left: 90px;" *ngIf="!isCollapsed">&#xe67a;</i>
+  <i class="iconfont" *ngIf="isCollapsed" style="margin-left: 19px;margin-right: 43px;">&#xe603;</i>
+  <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="changeIcon()"
+    style="color: #fff"></i>
+</nz-header>

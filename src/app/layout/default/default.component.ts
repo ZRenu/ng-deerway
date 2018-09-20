@@ -8,11 +8,10 @@ import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 export class DefaultComponent implements OnInit {
   isCollapsed = false;
   triggerTemplate = null;
-  @ViewChild('trigger') customTrigger: TemplateRef<void>;
 
   constructor() { }
-  changeTrigger(): void {
-    this.triggerTemplate = this.customTrigger;
+  launchSidebar() {
+    this.isCollapsed = !this.isCollapsed;
   }
   ngOnInit() {
   }
