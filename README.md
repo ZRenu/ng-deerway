@@ -42,7 +42,7 @@ npm install ng-zorro-antd --save
 > * core 一些通用服务公共组件和管道以及通用验证
 > * layout   通用模版
 > * routes   项目主体内容
-> * shared   导入导出项目公用的第三方引用
+> * shared   导入导出项目公用的引用
 > * utils    项目工具合集
 > * styles   通用样式
 > * assets   静态资源（图片与图标）
