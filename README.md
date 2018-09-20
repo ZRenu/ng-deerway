@@ -11,11 +11,11 @@
 
 ### 创建项目
 `
-ng new ng-web --style less
+ng new ng-deerway --style less
 `
 
 `
-cd ng-web
+cd ng-deerway
 `
 ### 初始化配置
 `
@@ -39,18 +39,17 @@ npm install ng-zorro-antd --save
 
 ## 项目结构
 
-> * core    一些通用服务，公共组件和管道以及通用验证
+> * core 一些通用服务公共组件和管道以及通用验证
 > * layout   通用模版
 > * routes   项目主体内容
 > * shared   导入导出项目公用的第三方引用
 > * utils    项目工具合集
 > * styles   通用样式
-> * assets   图片与图标
+> * assets   静态资源（图片与图标）
 
 ## 运行
 
 `ng s -c [environment] --port [port]`
 
 ## 项目说明
-
-NG大法好
+NG大法好
