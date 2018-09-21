@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MenusService } from './menus/menus.service';
 
 @Component({
   selector: 'app-sider',
@@ -8,10 +9,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SiderComponent implements OnInit {
   @Input() isCollapsed;
   triggerTemplate = null;
-  constructor() { }
+  menus;
+  constructor(
+    private menu: MenusService
+  ) { }
 
   ngOnInit() {
-    console.log('v', this.isCollapsed);
+    this.menus = this.menu.menus();
   }
-
 }
