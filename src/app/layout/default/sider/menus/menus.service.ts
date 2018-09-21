@@ -8,72 +8,34 @@ export class MenusService {
   constructor() { }
   _Menus = [
     {
-      text: 'User',
-      link: '',
-      icon: 'anticon anticon-user',
-      children: [
-        {
-          text: 'Tom',
-          link: '',
-          icon: ''
-        },
-        {
-          text: 'Bill',
-          link: '',
-          icon: ''
-        },
-        {
-          text: 'Alex',
-          link: '',
-          icon: ''
-        }
-      ]
-    },
-    {
-      text: 'Team',
-      link: '',
-      icon: 'anticon anticon-team',
-      children: [
-        {
-          text: 'Team 1',
-          link: '',
-          icon: '',
-        },
-        {
-          text: 'Team 2',
-          link: '',
-          icon: '',
-        }
-      ]
-    },
-    {
-      text: 'File',
-      link: '',
-      icon: 'anticon anticon-file',
+      text: '首页',
+      link: 'index',
+      icon: 'anticon anticon-home',
       children: []
     },
     {
-      text: 'TeamOne',
+      text: '百度地图',
       link: '',
-      icon: 'anticon anticon-team',
+      icon: 'anticon anticon-environment-o',
       children: [
         {
-          text: 'Team 1',
-          link: '',
+          text: '地图标点',
+          link: 'map',
           icon: '',
         },
-        {
-          text: 'Team 2',
-          link: '',
-          icon: '',
-        }
       ]
     },
     {
-      text: 'FileOne',
+      text: '图表',
       link: '',
-      icon: 'anticon anticon-file',
-      children: []
+      icon: 'anticon anticon-line-chart',
+      children: [
+        {
+          text: '折线图',
+          link: 'map',
+          icon: '',
+        }
+      ]
     }
   ];
   menus() {

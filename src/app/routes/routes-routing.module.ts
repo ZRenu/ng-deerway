@@ -16,6 +16,7 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'index', pathMatch: 'full' },
             { path: 'index', loadChildren: './index/index.module#IndexModule' },
+            { path: 'map', loadChildren: './map/map.module#MapModule' }
 
         ]
     },
