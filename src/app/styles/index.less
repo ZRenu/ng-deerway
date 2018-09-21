@@ -1,0 +1,42 @@
+/*less学习*/
+
+/*变量*/
+
+// @base: #f938ab;
+/*混合*/
+
+// .bkground() {
+//     background: lightblue;
+// }
+/*函数*/
+
+// .bkwidth(@width, @height) {
+//     width: @width;
+//     height: @height - 200;
+// }
+/* 函数允许有默认值 */
+
+// .borderadius(@radius: 4px) {
+//     border-radius: @radius;
+// }
+// p {
+//     color: @base;
+//     .bkground;
+//     .bkwidth(400px, 400px);
+//     .borderadius;
+// }
+.dw-flexItems(@items) {
+    display: flex;
+    align-items: @items;
+}
+
+.dw-flexContent(@content) {
+    display: flex;
+    justify-content: content;
+}
+
+.dw-flexIC(@i, @c) {
+    display: flex;
+    align-items: @i;
+    justify-content: @c
+}
