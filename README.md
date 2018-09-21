@@ -7,6 +7,10 @@
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
 
+## 项目说明
+
+中小型后台管理系统，项目集成包括百度地图,EChats等功能，项目为个人项目不断更新中。
+
 ## 开始
 
 ### 创建项目
@@ -25,6 +29,20 @@ ng add ng-zorro-antd
 `
 npm install ng-zorro-antd --save
 `
+## 运行
+
+`ng s -c [environment] --port [port]`
+
+## 项目结构
+
+> * core 一些通用服务公共组件和管道以及通用验证
+> * layout   通用模版
+> * routes   项目主体内容
+> * shared   导入导出项目公用的引用
+> * utils    项目工具合集
+> * styles   通用样式
+> * assets   静态资源（图片与图标）
+
 ### 用户认证
 
 [@delon/auth](https://ng-alain.com/auth/getting-started)
@@ -37,19 +55,6 @@ npm install ng-zorro-antd --save
 
 图标：[iconfont](http://iconfont.cn)
 
-## 项目结构
 
-> * core 一些通用服务公共组件和管道以及通用验证
-> * layout   通用模版
-> * routes   项目主体内容
-> * shared   导入导出项目公用的引用
-> * utils    项目工具合集
-> * styles   通用样式
-> * assets   静态资源（图片与图标）
 
-## 运行
 
-`ng s -c [environment] --port [port]`
-
-## 项目说明
-NG大法好
