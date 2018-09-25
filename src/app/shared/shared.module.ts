@@ -12,7 +12,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     RouterModule,
     ReactiveFormsModule,
     NgZorroAntdModule,
-    NgxEchartsModule
+    NgxEchartsModule,
   ],
   declarations: [],
   exports: [
@@ -21,7 +21,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     RouterModule,
     ReactiveFormsModule,
     NgZorroAntdModule,
-    NgxEchartsModule
+    NgxEchartsModule,
   ]
 })
 export class SharedModule { }
