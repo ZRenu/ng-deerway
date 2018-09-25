@@ -59,9 +59,9 @@ npm install ng-zorro-antd --save
 
 图表：[echarts](http://echarts.baidu.com/index.html)
 
-#### 引入echarts
+#### 引入echarts
 
-1、命令行下载
+1、命令行下载
 
 `
 npm install echarts --save
@@ -71,7 +71,7 @@ npm install echarts --save
 npm install ngx-echarts --save
 `
 
-2、angular.json配置echarts路径(projects - architect - build - scripts)
+2、angular.json配置echarts路径(projects - architect - build - scripts)
 
 `
 node_modules/echarts/dist/echarts.min.js
