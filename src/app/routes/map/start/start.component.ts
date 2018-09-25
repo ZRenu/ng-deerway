@@ -9,7 +9,7 @@ declare const BMAP_SATELLITE_MAP: any;
   styleUrls: ['./start.component.less']
 })
 export class StartComponent implements OnInit, OnDestroy {
-  resize = (document.body.clientHeight - 210) + 'px';
+  resize = (document.body.clientHeight - 181) + 'px';
   options: any = {};
   status = '';
   @ViewChild('map') mapComp: AbmComponent;

@@ -20,7 +20,7 @@ export class MenusService {
       children: [
         {
           text: '折线图',
-          link: 'map',
+          link: 'charts/line',
           icon: '',
         }
       ]

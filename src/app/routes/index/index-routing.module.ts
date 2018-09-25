@@ -5,8 +5,12 @@ import { InfoComponent } from './info/info.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'info', pathMatch: 'full' },
-    { path: 'list', component: ListComponent },
-    { path: 'info', component: InfoComponent },
+    {
+        path: 'list', component: ListComponent
+    },
+    {
+        path: 'info', component: InfoComponent
+    },
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes)],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenusService } from '../sider/menus/menus.service';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./breadcrumb.component.less']
 })
 export class BreadcrumbComponent implements OnInit {
-
-  constructor() { }
+  menus;
+  constructor(
+    private menu: MenusService
+  ) { }
 
   ngOnInit() {
+    this.menus = this.menu.menus();
   }
 
 }
