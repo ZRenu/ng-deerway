@@ -55,7 +55,7 @@ npm install ng-zorro-antd --save
 
 图标：[iconfont](http://iconfont.cn)
 
-地图：[angular-baidu-maps](https://github.com/cipchk/angular-baidu-maps)
+地图：[angular-baidu-maps](https://github.com/cipchk/angular-baidu-maps)
 
 
 
