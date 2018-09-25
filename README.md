@@ -9,7 +9,7 @@
 
 ## 项目说明
 
-中小型后台管理系统，项目集成包括百度地图,EChats等功能，项目为个人项目不断更新中。
+中小型后台管理系统，项目集成包括百度地图,EChats等功能，项目不断更新中。
 
 ## 开始
 
@@ -55,6 +55,7 @@ npm install ng-zorro-antd --save
 
 图标：[iconfont](http://iconfont.cn)
 
+地图：[angular-baidu-maps](https://github.com/cipchk/angular-baidu-maps)
 
 
 

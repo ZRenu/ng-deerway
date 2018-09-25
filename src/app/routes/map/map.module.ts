@@ -2,14 +2,20 @@ import { NgModule } from '@angular/core';
 import { MarkerComponent } from './marker/marker.component';
 import { MapRoutingModule } from './map-routing.module';
 import { SharedModule } from '../../shared/shared.module';
+import { StartComponent } from './start/start.component';
+import { AbmModule } from 'angular-baidu-maps';
 
 @NgModule({
   imports: [
     SharedModule,
-    MapRoutingModule
+    MapRoutingModule,
+    AbmModule.forRoot({
+      apiKey: 'D7f130ce4be999b80a56cfd12ab06a7a'
+    })
   ],
   declarations: [
-    MarkerComponent
+    MarkerComponent,
+    StartComponent
   ]
 })
 export class MapModule { }

@@ -14,18 +14,6 @@ export class MenusService {
       children: []
     },
     {
-      text: '百度地图',
-      link: '',
-      icon: 'anticon anticon-environment-o',
-      children: [
-        {
-          text: '地图标点',
-          link: 'map',
-          icon: '',
-        },
-      ]
-    },
-    {
       text: '图表',
       link: '',
       icon: 'anticon anticon-line-chart',
@@ -35,6 +23,23 @@ export class MenusService {
           link: 'map',
           icon: '',
         }
+      ]
+    },
+    {
+      text: '百度地图',
+      link: '',
+      icon: 'anticon anticon-environment-o',
+      children: [
+        {
+          text: '开始',
+          link: 'map/start',
+          icon: '',
+        },
+        {
+          text: '地图标点',
+          link: 'map/marker',
+          icon: '',
+        },
       ]
     }
   ];
