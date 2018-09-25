@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
     RouterModule,
     ReactiveFormsModule,
     NgZorroAntdModule,
+    NgxEchartsModule
   ],
   declarations: [],
   exports: [
@@ -19,6 +21,7 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
     RouterModule,
     ReactiveFormsModule,
     NgZorroAntdModule,
+    NgxEchartsModule
   ]
 })
 export class SharedModule { }

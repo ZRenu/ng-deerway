@@ -57,5 +57,28 @@ npm install ng-zorro-antd --save
 
 地图：[angular-baidu-maps](https://github.com/cipchk/angular-baidu-maps)
 
+图表：[echarts](http://echarts.baidu.com/index.html)
 
+#### 引入echarts
 
+1、命令行下载
+
+`
+npm install echarts --save
+`
+
+`
+npm install ngx-echarts --save
+`
+
+2、angular.json配置echarts路径(projects - architect - build - scripts)
+
+`
+node_modules/echarts/dist/echarts.min.js
+`
+
+3、模块中引用
+
+`
+import { NgxEchartsModule } from 'ngx-echarts';
+`
