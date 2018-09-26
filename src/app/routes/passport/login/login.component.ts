@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
       this.loginApi.login(loginParams)
         .subscribe(res => {
           this.loading = false;
-          this.router.navigateByUrl('default/index');
+          this.router.navigateByUrl('default/table');
           // 设置Token信息
           this.tokenService.set({
             token: res.token,

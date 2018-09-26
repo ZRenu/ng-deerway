@@ -32,7 +32,7 @@ export class MenusService {
       children: [
         {
           text: '查询表格',
-          link: 'list/list-table',
+          link: 'table/list-table',
           icon: '',
         }
       ]
