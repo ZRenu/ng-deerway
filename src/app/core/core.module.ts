@@ -1,10 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { DwTableComponent } from './meta/dw-table/dw-table.component';
+import { SharedModule } from '../shared/shared.module';
+import { DwInfoModelComponent } from './meta/dw-info-model/dw-info-model.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule
   ],
-  declarations: []
+  declarations: [
+    DwTableComponent,
+    DwInfoModelComponent
+  ],
+  exports: [
+    DwTableComponent,
+    DwInfoModelComponent
+  ]
 })
 export class CoreModule { }

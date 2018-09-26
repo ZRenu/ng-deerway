@@ -1,0 +1,9 @@
+<app-dw-table [tableDatas]="tableDatas" (dwTables)="launchTbData($event)" (deleteTb)="launchDelete($event)" (editTb)="launchEdit($event)">
+</app-dw-table>
+<app-dw-info-model [isVisible]="isVisible" [nzTitle]="nzTitle" (showInfoModel)="launchInfoModel($event)">
+  <p>{{itemModel?.key}}</p>
+  <p>{{itemModel?.age}}</p>
+  <p>{{itemModel?.name}}</p>
+  <p>{{itemModel?.address}}</p>
+  <button nz-button nzType="primary" (click)="save()" [nzLoading]="isLoadingSave">{{saveTitle}}</button>
+</app-dw-info-model>

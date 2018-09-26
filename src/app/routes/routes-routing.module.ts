@@ -23,6 +23,9 @@ const routes: Routes = [
             },
             {
                 path: 'charts', loadChildren: './charts/charts.module#ChartsModule'
+            },
+            {
+                path: 'list', loadChildren: './list/list.module#ListModule'
             }
 
         ]

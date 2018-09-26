@@ -26,6 +26,18 @@ export class MenusService {
       ]
     },
     {
+      text: '列表页',
+      link: '',
+      icon: 'anticon anticon-appstore-o',
+      children: [
+        {
+          text: '查询表格',
+          link: 'list/list-table',
+          icon: '',
+        }
+      ]
+    },
+    {
       text: '百度地图',
       link: '',
       icon: 'anticon anticon-environment-o',
