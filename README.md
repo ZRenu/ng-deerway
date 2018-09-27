@@ -94,7 +94,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 #### 1、打包
 
 `
-ng build --pord
+ng build --[]
 `
 #### 2、配置WEB服务服务器
 [nginx](http://www.nginx.cn/doc/)
