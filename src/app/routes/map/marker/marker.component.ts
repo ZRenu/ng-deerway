@@ -180,16 +180,16 @@ export class MarkerComponent implements OnInit, OnDestroy {
       const point = new BMap.Point(points[i].lng, points[i].lat); // 将标注点转化成地图上的点
       let myIcon = '';
       if (points[i].type === 1) {
-        myIcon = new BMap.Icon('../../../../assets/map/1.png', new BMap.Size(40, 45));
+        myIcon = new BMap.Icon('https://t1.picb.cc/uploads/2018/09/27/JhHxka.png', new BMap.Size(40, 45));
       }
       if (points[i].type === 2) {
-        myIcon = new BMap.Icon('../../../../assets/map/2.png', new BMap.Size(40, 45));
+        myIcon = new BMap.Icon('https://t1.picb.cc/uploads/2018/09/27/JhHTru.png', new BMap.Size(40, 45));
       }
       if (points[i].type === 3) {
-        myIcon = new BMap.Icon('../../../../assets/map/3.png', new BMap.Size(40, 45));
+        myIcon = new BMap.Icon('https://t1.picb.cc/uploads/2018/09/27/JhH90D.png', new BMap.Size(40, 45));
       }
       if (points[i].type === 4) {
-        myIcon = new BMap.Icon('../../../../assets/map/4.png', new BMap.Size(40, 45));
+        myIcon = new BMap.Icon('https://t1.picb.cc/uploads/2018/09/27/JhHLov.png', new BMap.Size(40, 45));
       }
       const marker = new BMap.Marker(point, { icon: myIcon }); // 将点转化成标注点
       this._map.addOverlay(marker);  // 将标注点添加到地图上
