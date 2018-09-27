@@ -93,7 +93,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 
 #### 1、打包
 `
-ng build --[]
+ng build --[相关命令，视情况而定]
 `
 #### 2、配置WEB服务服务器
 [nginx](http://www.nginx.cn/doc/)
@@ -101,6 +101,6 @@ ng build --[]
 #### 3、推送资源
 
 `
-scp -r  打包后文件地址 root@服务器IP地址：/root/www
+scp -r  打包后文件路径 root@服务器IP地址：/root/www
 `
 #### 4、域名解析，发布完成
