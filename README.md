@@ -9,7 +9,7 @@
 
 > * ECharts
 > * 百度地图
-#### ng-zorro组件二次封装（app/core/meta）
+#### ng-zorro组件二次封装(app/core/meta)
 > * 基础表格组件 dw-table
 > * 通用时间组件 dw-date-picker
 > * 通用搜索组件 dw-search
