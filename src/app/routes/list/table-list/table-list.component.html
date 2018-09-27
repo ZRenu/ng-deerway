@@ -1,5 +1,8 @@
-<app-dw-table [tableDatas]="tableDatas" (dwTables)="launchTbData($event)" (deleteTb)="launchDelete($event)" (editTb)="launchEdit($event)">
-</app-dw-table>
+<div class="dw-table-list">
+  <app-dw-table [tableDatas]="tableDatas" (dwTables)="launchTbData($event)" (deleteTb)="launchDelete($event)" (editTb)="launchEdit($event)"
+    (sortData)="launchSort($event)">
+  </app-dw-table>
+</div>
 <app-dw-info-model [isVisible]="isVisible" [nzTitle]="nzTitle" (showInfoModel)="launchInfoModel($event)">
   <p>{{itemModel?.key}}</p>
   <p>{{itemModel?.age}}</p>

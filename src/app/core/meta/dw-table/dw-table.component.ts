@@ -7,9 +7,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class DwTableComponent implements OnInit {
   dwData = {};
   @Input() tableDatas;
+  @Input() nzTitle;
   @Output() dwTables = new EventEmitter<object>();
   @Output() deleteTb = new EventEmitter<object>();
   @Output() editTb = new EventEmitter<object>();
+  @Output() sortData = new EventEmitter<object>();
 
   ngOnInit() {
   }
@@ -32,6 +34,10 @@ export class DwTableComponent implements OnInit {
   delete(data) {
     this.deleteTb.emit(data);
   }
+  /**修改状态 */
+  sortChange(sortName: string, value: string): void {
+    this.sortData.emit({ 'name': sortName, 'value': value });
+  }
 }
 /**
  *  nzShowPagination 是否开启分页
@@ -52,7 +58,10 @@ export class DwTableComponent implements OnInit {
  *
  * nzSortKey: string 排序key
  *
+ * sort 筛选状态名
+ *
  * }
+ *  sortMap 筛选状态
  *
  *  dataSet 表格数据
  */
@@ -62,5 +71,6 @@ export interface DwTable {
   nzBordered?: boolean;
   nzTitle?: string;
   dataTh?: any;
+  sortMap?: any;
   dataSet?: any;
 }

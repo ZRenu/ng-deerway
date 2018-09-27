@@ -22,28 +22,33 @@ export class TableListComponent implements OnInit {
     nzShowPagination: false,
     nzShowAction: true,
     nzBordered: true,
+    nzTitle: 'NG-ZORRO表格常用功能封装(详情见源码)',
     dataTh: [
       {
         title: 'Name',
-        nzShowFilter: true,
-        nzShowFilterList: [
-          { text: 'Joe', value: 1 },
-          { text: 'Jim', value: 2 }
-        ]
+        // sort: 'name',
+        // nzShowFilter: true,
+        // nzShowFilterList: [
+        //   { text: 'Joe', value: 1 },
+        //   { text: 'Jim', value: 2 }
+        // ]
       },
       {
         title: 'Age',
         nzShowSort: true,
-        nzSortKey: 'age'
+        nzSortKey: 'age',
+        sort: 'age'
       },
       {
         title: 'number',
         nzShowSort: true,
-        nzSortKey: 'number'
+        nzSortKey: 'number',
+        sort: 'number'
       },
       {
         title: 'Address',
         nzShowFilter: true,
+        sort: 'address',
         nzShowFilterList: [
           { text: 'hello', value: 3 },
           { text: 'word', value: 4 }
@@ -53,6 +58,12 @@ export class TableListComponent implements OnInit {
         title: 'Action'
       }
     ],
+    sortMap: {
+      name: null,
+      age: null,
+      number: null,
+      address: null
+    },
     dataSet: [
       {
         key: '1',
@@ -116,6 +127,16 @@ export class TableListComponent implements OnInit {
         '保存成功');
     }, 1000);
     console.log('保存');
+  }
+  launchSort($event) {
+    const sortName = $event.name;
+    const sortValue = $event.value;
+    const sortMap = this.tableDatas.sortMap;
+    // tslint:disable-next-line:forin
+    for (const key in sortMap) {
+      sortMap[key] = (key === sortName ? sortValue : null)
+    }
+
   }
   launchTbData($event) {
     if ($event.hasOwnProperty('listOfSearchName')) {

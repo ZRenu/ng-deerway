@@ -1,9 +1,10 @@
 <nz-table #basicTable [nzData]="tableDatas.dataSet" [nzShowPagination]="tableDatas.nzShowPagination" [nzBordered]="tableDatas.nzBordered"
-  [nzTitle]="tableDatas?.nzTitle">
+  [nzTitle]="tableDatas?.nzTitle"> 
   <thead>
     <tr>
       <th *ngFor="let th of tableDatas.dataTh;let i=index" [nzShowFilter]="th?.nzShowFilter" [nzShowSort]="th?.nzShowSort"
-        [nzFilters]="th?.nzShowFilterList" nzSortKey="th?.nzSortKey" (nzFilterChange)="filter($event)" (nzSortChange)="sort(th?.nzSortKey,$event)">{{th.title}}</th>
+        [nzFilters]="th?.nzShowFilterList" nzSortKey="th?.nzSortKey" (nzFilterChange)="filter($event)" (nzSortChange)="sort(th?.nzSortKey,$event)"
+        [nzSort]="tableDatas.sortMap[th.sort]" (nzSortChange)="sortChange(th.sort,$event)">{{th.title}}</th>
     </tr>
   </thead>
   <tbody>
