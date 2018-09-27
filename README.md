@@ -91,18 +91,18 @@ import { NgxEchartsModule } from 'ngx-echarts';
 
 ## 部署
 
-### 1、打包
+#### 1、打包
 
 `
-ng build --prod
+ng build --pord
 `
 
-### 2、配置WEB服务服务器
+#### 2、配置WEB服务服务器
 [nginx](http://www.nginx.cn/doc/)
 
-### 3、推送资源
+#### 3、推送资源
 
 `
 scp -r  打包后文件地址 root@服务器IP地址：/root/www
 `
-### 4、域名解析，发布完成
+#### 4、域名解析，发布完成
