@@ -92,10 +92,9 @@ import { NgxEchartsModule } from 'ngx-echarts';
 ## 部署
 
 #### 1、打包
-
 `
 ng build --[]
-`
+`
 #### 2、配置WEB服务服务器
 [nginx](http://www.nginx.cn/doc/)
 
