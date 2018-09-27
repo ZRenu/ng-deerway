@@ -7,8 +7,11 @@
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
 
-## 项目说明
+> * ECharts
+> * 百度地图
+> * ng-zorro表格常用功能二次封装
 
+## 项目说明
 
 ## 开始
 
