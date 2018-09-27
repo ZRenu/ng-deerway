@@ -26,6 +26,7 @@
     "angular-baidu-maps": "^2.0.1",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
+    "date-fns": "^1.29.0",
     "echarts": "^4.2.0-rc.1",
     "ng-zorro-antd": "^1.4.1",
     "ngx-echarts": "^4.0.0",

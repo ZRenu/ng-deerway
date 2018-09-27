@@ -1,9 +1,13 @@
 <div class="dw-table-list">
+  <div class="dw-table-sort">
+    <app-dw-date-picker [datePicker]="datePicker" (startTime)="launchStart($event)" (endTime)="launchEnd($event)"></app-dw-date-picker>
+    <app-dw-search (searchvalue)="launchSearch($event)" [searchData]="searchData"></app-dw-search>
+  </div>
   <app-dw-table [tableDatas]="tableDatas" (dwTables)="launchTbData($event)" (deleteTb)="launchDelete($event)" (editTb)="launchEdit($event)"
     (sortData)="launchSort($event)">
   </app-dw-table>
 </div>
-<app-dw-info-model [isVisible]="isVisible" [nzTitle]="nzTitle" (showInfoModel)="launchInfoModel($event)">
+<app-dw-info-model [infoModel]="infoModel" (showInfoModel)="launchInfoModel($event)">
   <p>{{itemModel?.key}}</p>
   <p>{{itemModel?.age}}</p>
   <p>{{itemModel?.name}}</p>

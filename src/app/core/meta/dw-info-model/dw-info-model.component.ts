@@ -6,8 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dw-info-model.component.less']
 })
 export class DwInfoModelComponent implements OnInit {
-  @Input() isVisible;
-  @Input() nzTitle;
+  @Input() infoModel;
   @Output() showInfoModel = new EventEmitter<string>();
   constructor() { }
 
@@ -20,4 +19,8 @@ export class DwInfoModelComponent implements OnInit {
   handleCancel(): void {
     this.showInfoModel.emit('false');
   }
+}
+export interface InfoModel {
+  isVisible?: boolean;
+  nzTitle?: string;
 }

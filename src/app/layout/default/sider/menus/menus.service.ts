@@ -31,7 +31,7 @@ export class MenusService {
       icon: 'anticon anticon-appstore-o',
       children: [
         {
-          text: '查询表格',
+          text: '基础表格',
           link: 'table/list-table',
           icon: '',
         }

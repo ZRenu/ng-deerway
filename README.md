@@ -9,7 +9,11 @@
 
 > * ECharts
 > * 百度地图
-> * ng-zorro表格常用功能二次封装
+#### ng-zorro组件二次封装（app/core/meta）
+> * 基础表格组件 dw-table
+> * 通用时间组件 dw-date-picker
+> * 通用搜索组件 dw-search
+> * 信息模态框 dw-info-model
 
 ## 项目说明
 
@@ -37,7 +41,7 @@ npm install ng-zorro-antd --save
 
 ## 项目结构
 
-> * core 一些通用服务公共组件和管道以及通用验证
+> * core ng-zorro组件二次封装 通用服务、管道以及通用验证
 > * layout   通用模版
 > * routes   项目主体内容
 > * shared   导入导出项目公用的引用

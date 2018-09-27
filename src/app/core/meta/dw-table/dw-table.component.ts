@@ -40,6 +40,8 @@ export class DwTableComponent implements OnInit {
   }
 }
 /**
+ * 基础表格配置信息
+ *
  *  nzShowPagination 是否开启分页
  *
  *  nzShowAction 是否开启操作列

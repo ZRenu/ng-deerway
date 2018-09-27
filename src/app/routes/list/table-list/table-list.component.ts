@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DwTable } from '../../../core/meta/dw-table/dw-table.component';
 import { NzNotificationService } from 'ng-zorro-antd';
+import { SearchData } from '../../../core/meta/dw-search/dw-search.component';
+import { DatePicker } from '../../../core/meta/dw-date-picker/dw-date-picker.component';
+import { InfoModel } from '../../../core/meta/dw-info-model/dw-info-model.component';
 
 @Component({
   selector: 'app-table-list',
@@ -8,15 +11,32 @@ import { NzNotificationService } from 'ng-zorro-antd';
   styleUrls: ['./table-list.component.less']
 })
 export class TableListComponent implements OnInit {
-  isVisible = false;
   itemModel;
-  nzTitle = '详细信息';
   isLoadingSave = false;
   saveTitle = '保存';
   Dw = {
     listOfSearchName: '' || [],
     sortName: '',
-    sortValue: 0
+    sortValue: 0,
+    searchValue: '',
+    startTime: '',
+    endTime: ''
+  };
+  infoModel: InfoModel = {
+    isVisible: false,
+    nzTitle: '员工信息'
+  };
+  datePicker: DatePicker = {
+    nzSize: 'large',
+    startPlaceHolder: '开始时间',
+    endtPlaceHolder: '结束时间',
+    ShowToday: false,
+    Format: 'yyyy-MM-dd'
+
+  };
+  searchData: SearchData = {
+    placeholder: '搜索：姓名、地址',
+    nzSize: 'large'
   };
   tableDatas: DwTable = {
     nzShowPagination: false,
@@ -25,28 +45,22 @@ export class TableListComponent implements OnInit {
     nzTitle: 'NG-ZORRO表格常用功能封装(详情见源码)',
     dataTh: [
       {
-        title: 'Name',
-        // sort: 'name',
-        // nzShowFilter: true,
-        // nzShowFilterList: [
-        //   { text: 'Joe', value: 1 },
-        //   { text: 'Jim', value: 2 }
-        // ]
+        title: '姓名',
       },
       {
-        title: 'Age',
+        title: '年龄',
         nzShowSort: true,
         nzSortKey: 'age',
         sort: 'age'
       },
       {
-        title: 'number',
+        title: '工龄',
         nzShowSort: true,
         nzSortKey: 'number',
         sort: 'number'
       },
       {
-        title: 'Address',
+        title: '地址',
         nzShowFilter: true,
         sort: 'address',
         nzShowFilterList: [
@@ -55,7 +69,7 @@ export class TableListComponent implements OnInit {
         ]
       },
       {
-        title: 'Action'
+        title: '操作'
       }
     ],
     sortMap: {
@@ -67,45 +81,45 @@ export class TableListComponent implements OnInit {
     dataSet: [
       {
         key: '1',
-        name: 'John Brown',
-        age: 32,
+        name: '莫希宇',
+        age: 26,
         number: 10,
-        address: 'New York No. 1 Lake Park'
+        address: '上海市浦东新区盛夏路560号'
       },
       {
         key: '2',
-        name: 'Jim Green',
-        age: 42,
+        name: '刘畅',
+        age: 25,
         number: 8,
-        address: 'London No. 1 Lake Park'
+        address: '上海市浦东新区高科中路333号'
       },
       {
         key: '3',
-        name: 'Joe Black',
-        age: 52,
-        number: 34,
-        address: 'Sidney No. 1 Lake Park'
+        name: '左立军',
+        age: 28,
+        number: 3,
+        address: '上海市浦东新区祖冲之路40号'
       },
       {
         key: '1',
-        name: 'John Brown',
-        age: 62,
+        name: '李现',
+        age: 22,
         number: 14,
-        address: 'New York No. 1 Lake Park'
+        address: '上海市浦东新区紫薇路18号'
       },
       {
         key: '2',
-        name: 'Jim Green',
-        age: 72,
-        number: 40,
-        address: 'London No. 1 Lake Park'
+        name: '陈哲',
+        age: 42,
+        number: 2,
+        address: '上海市浦东新区张江路88号'
       },
       {
         key: '3',
-        name: 'Joe Black',
-        age: 82,
-        number: 55,
-        address: 'Sidney No. 1 Lake Park'
+        name: '巫景飞',
+        age: 32,
+        number: 13,
+        address: '上海市浦东新区斜土路599号'
       }
     ]
   };
@@ -116,11 +130,12 @@ export class TableListComponent implements OnInit {
 
   ngOnInit() {
   }
+  /**保存修改 */
   save() {
     this.isLoadingSave = true;
     this.saveTitle = '保存中...';
     setTimeout(() => {
-      this.isVisible = false;
+      this.infoModel.isVisible = false;
       this.isLoadingSave = false;
       this.saveTitle = '保存';
       this.notification.create('success', '系统提示',
@@ -128,6 +143,7 @@ export class TableListComponent implements OnInit {
     }, 1000);
     console.log('保存');
   }
+  /** 改变筛选状态 */
   launchSort($event) {
     const sortName = $event.name;
     const sortValue = $event.value;
@@ -138,6 +154,7 @@ export class TableListComponent implements OnInit {
     }
 
   }
+  /** 排序筛选*/
   launchTbData($event) {
     if ($event.hasOwnProperty('listOfSearchName')) {
       this.Dw.listOfSearchName = $event.listOfSearchName;
@@ -152,30 +169,58 @@ export class TableListComponent implements OnInit {
     this.tableDatas.dataSet = [
       {
         key: '1',
-        name: 'John Brown',
-        age: 32,
-        number: 10,
-        address: 'New York No. 1 Lake Park'
+        name: '李现',
+        age: 22,
+        number: 14,
+        address: '上海市浦东新区紫薇路18号'
       },
       {
         key: '2',
-        name: 'Jim Green',
+        name: '陈哲',
         age: 42,
-        number: 8,
-        address: 'London No. 1 Lake Park'
+        number: 2,
+        address: '上海市浦东新区张江路88号'
       },
     ];
 
   }
+  /** 删除数据*/
   launchDelete($event) {
     console.log('delete', $event);
   }
+  /** 编辑数据*/
   launchEdit($event) {
     this.itemModel = $event;
-    this.isVisible = true;
+    this.infoModel.isVisible = true;
   }
+  /** 关闭模态框*/
   launchInfoModel($event) {
-    this.isVisible = $event;
+    this.infoModel.isVisible = $event;
   }
-
+  /** 搜索*/
+  launchSearch($event) {
+    this.Dw.searchValue = $event;
+    console.log('筛选内容', this.Dw);
+    this.tableDatas.dataSet = [
+      {
+        key: '1',
+        name: '李现',
+        age: 22,
+        number: 14,
+        address: '上海市浦东新区紫薇路18号'
+      }
+    ];
+  }
+  /**开始时间 */
+  launchStart($event) {
+    this.Dw.startTime = $event;
+    console.log('start', $event);
+    console.log('筛选数据', this.Dw);
+  }
+  /**结束时间 */
+  launchEnd($event) {
+    this.Dw.endTime = $event;
+    console.log('end', $event);
+    console.log('筛选数据', this.Dw);
+  }
 }

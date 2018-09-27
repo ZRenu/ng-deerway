@@ -1,0 +1,8 @@
+<div style="width: 400px" *ngIf="resize>1145">
+  <nz-input-group nzSearch [nzSize]="searchData.nzSize" [nzSuffix]="suffixButton">
+    <input type="text" nz-input [placeholder]="searchData.placeholder" [(ngModel)]="inputValue" (ngModelChange)="searchCollapsed()">
+  </nz-input-group>
+  <ng-template #suffixButton>
+    <button nz-button nzType="primary" [nzSize]="searchData.nzSize" nzSearch (click)="searchCollapsed()">搜索</button>
+  </ng-template>
+</div>
