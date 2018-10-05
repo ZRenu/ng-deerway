@@ -3,7 +3,7 @@
 * 安装 angular 环境
 * 安装 ng-zorro 依赖
 
-## 教程
+## 资料中心
 [博客园——鹿途](https://www.cnblogs.com/zry2510/category/1096539.html)
 ## 演示地址(非实时更新)
 
@@ -47,7 +47,6 @@ npm install ng-zorro-antd --save
 > * layout   通用模版
 > * routes   项目主体内容
 > * shared   导入导出项目公用的引用
-> * utils    项目工具合集
 > * styles   通用样式
 > * assets   静态资源（图片与图标）
 
