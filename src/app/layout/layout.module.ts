@@ -9,18 +9,18 @@ import { BreadcrumbComponent } from './default/breadcrumb/breadcrumb.component';
 
 const COMPONENTS = [
   DefaultComponent,
-  FullscreenComponent
+  FullscreenComponent,
+  PassportComponent,
+  HeaderComponent,
+  SiderComponent,
+  BreadcrumbComponent
 ];
 @NgModule({
   imports: [
     SharedModule
   ],
   declarations: [
-    ...COMPONENTS,
-    PassportComponent,
-    HeaderComponent,
-    SiderComponent,
-    BreadcrumbComponent
+    ...COMPONENTS
   ],
   exports: [
     ...COMPONENTS

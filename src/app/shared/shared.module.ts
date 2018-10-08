@@ -4,24 +4,21 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgxEchartsModule } from 'ngx-echarts';
-
+const SHAREDS = [
+  CommonModule,
+  FormsModule,
+  RouterModule,
+  ReactiveFormsModule,
+  NgZorroAntdModule,
+  NgxEchartsModule,
+];
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule,
-    ReactiveFormsModule,
-    NgZorroAntdModule,
-    NgxEchartsModule,
+    ...SHAREDS
   ],
   declarations: [],
   exports: [
-    CommonModule,
-    FormsModule,
-    RouterModule,
-    ReactiveFormsModule,
-    NgZorroAntdModule,
-    NgxEchartsModule,
+    ...SHAREDS
   ]
 })
 export class SharedModule { }
