@@ -1,6 +1,6 @@
 <nz-date-picker [nzDisabledDate]="disabledDate" [nzDisabledTime]="disabledRangeTime" [nzFormat]="datePicker.Format"
   [nzPlaceHolder]="datePicker.startPlaceHolder" [nzSize]="datePicker.nzSize" [nzShowToday]="datePicker.ShowToday"
-  [ngModel]="startDate" (ngModelChange)="startValueChange()"></nz-date-picker>
+  [(ngModel)]="startDate" (ngModelChange)="startValueChange()"></nz-date-picker>
 -
 <nz-date-picker [nzDisabledDate]="disabledDate" [nzFormat]="datePicker.Format" [nzPlaceHolder]="datePicker.endtPlaceHolder"
-  [nzSize]="datePicker.nzSize" [nzShowToday]="datePicker.ShowToday" [ngModel]="endDate" (ngModelChange)="endValueChange()"></nz-date-picker>
+  [nzSize]="datePicker.nzSize" [nzShowToday]="datePicker.ShowToday" [(ngModel)]="endDate" (ngModelChange)="endValueChange()"></nz-date-picker>
