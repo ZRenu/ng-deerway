@@ -1,5 +1,5 @@
 <nz-table #basicTable [nzData]="tableDatas.dataSet" [nzShowPagination]="tableDatas.nzShowPagination" [nzBordered]="tableDatas.nzBordered"
-  [nzTitle]="tableDatas?.nzTitle"> 
+  [nzTitle]="tableDatas?.nzTitle">
   <thead>
     <tr>
       <th *ngFor="let th of tableDatas.dataTh;let i=index" [nzShowFilter]="th?.nzShowFilter" [nzShowSort]="th?.nzShowSort"
@@ -14,9 +14,10 @@
       <td>{{data.number}}</td>
       <td>{{data.address}}</td>
       <td *ngIf="tableDatas.nzShowAction">
-        <a (click)="edit(data)">编辑</a>
+        <button nz-button nzType="primary" nzGhost (click)="edit(data)">编辑</button>
         <nz-divider nzType="vertical"></nz-divider>
-        <a (click)="delete(data)">删除</a>
+        <button nz-button nzType="danger" nzGhost nz-popconfirm nzTitle="确认删除吗?" (nzOnConfirm)="confirm(data)"
+          (nzOnCancel)="cancel()">删除</button>
       </td>
     </tr>
   </tbody>

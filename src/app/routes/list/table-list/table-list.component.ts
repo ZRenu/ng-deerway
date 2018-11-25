@@ -42,7 +42,7 @@ export class TableListComponent implements OnInit {
     nzShowPagination: false,
     nzShowAction: true,
     nzBordered: true,
-    nzTitle: 'NG-ZORRO表格常用功能封装(详情见源码)',
+    nzTitle: '鹿途项目只对表格进行了基础的封装，可以根据实际项目的需求自行添加新功能',
     dataTh: [
       {
         title: '姓名',

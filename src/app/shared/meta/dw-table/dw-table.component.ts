@@ -30,13 +30,15 @@ export class DwTableComponent implements OnInit {
   edit(data) {
     this.editTb.emit(data);
   }
-  /**删除 */
-  delete(data) {
-    this.deleteTb.emit(data);
-  }
   /**修改状态 */
   sortChange(sortName: string, value: string): void {
     this.sortData.emit({ 'name': sortName, 'value': value });
+  }
+  cancel() {
+
+  }
+  confirm(data): void {
+    this.deleteTb.emit(data);
   }
 }
 /**

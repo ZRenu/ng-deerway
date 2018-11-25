@@ -52,10 +52,14 @@ export class DwDatePickerComponent implements OnInit {
     };
   }
   startValueChange() {
-    this.startTime.emit(this.startDate.getTime());
+    if (this.startDate !== null) {
+      this.startTime.emit(this.startDate.getTime());
+    }
   }
   endValueChange() {
-    this.endTime.emit(this.endDate.getTime());
+    if (this.endDate !== null) {
+      this.endTime.emit(this.endDate.getTime());
+    }
   }
 }
 /**
