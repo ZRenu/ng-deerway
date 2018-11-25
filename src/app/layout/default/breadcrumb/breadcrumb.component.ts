@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenusService } from '../sider/menus/menus.service';
+import { MenusService } from 'src/app/core/menus/menus.service';
+
 
 @Component({
   selector: 'app-breadcrumb',
