@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MenusService } from './menus/menus.service';
-
+import { MenusService } from 'src/app/core/menus/menus.service';
 @Component({
   selector: 'app-sider',
   templateUrl: './sider.component.html',

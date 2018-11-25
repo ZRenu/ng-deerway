@@ -10,13 +10,13 @@ export class MenusService {
     {
       text: '首页',
       link: 'index',
-      icon: 'anticon anticon-home',
+      icon: 'home',
       children: []
     },
     {
       text: '图表',
       link: '',
-      icon: 'anticon anticon-line-chart',
+      icon: 'line-chart',
       children: [
         {
           text: '折线图',
@@ -28,7 +28,7 @@ export class MenusService {
     {
       text: '列表页',
       link: '',
-      icon: 'anticon anticon-appstore-o',
+      icon: 'appstore',
       children: [
         {
           text: '基础表格',
@@ -40,7 +40,7 @@ export class MenusService {
     {
       text: '百度地图',
       link: '',
-      icon: 'anticon anticon-environment-o',
+      icon: 'compass',
       children: [
         {
           text: '开始',

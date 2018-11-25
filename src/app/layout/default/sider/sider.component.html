@@ -1,13 +1,13 @@
 <ul nz-menu [nzTheme]="'light'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
-    <ng-container *ngFor="let menu of menus">
-        <li nz-submenu *ngIf="menu.children.length">
-            <span title><i [class]="menu.icon"></i><span class="nav-text">{{menu.text}}</span></span>
-            <ul>
-                <li nz-menu-item *ngFor="let children of menu.children" [routerLink]="[children.link]">{{children.text}}</li>
-            </ul> 
-        </li>
-        <li nz-menu-item *ngIf="menu.children.length === 0" [routerLink]="[menu.link]">
-            <span title><i [class]="menu.icon"></i><span class="nav-text">{{menu.text}}</span></span>
-        </li>
-    </ng-container>
+  <ng-container *ngFor="let menu of menus">
+    <li nz-submenu *ngIf="menu.children.length">
+      <span title><i nz-icon [type]="menu.icon"></i><span class="nav-text">{{menu.text}}</span></span>
+      <ul>
+        <li nz-menu-item *ngFor="let children of menu.children" [routerLink]="[children.link]">{{children.text}}</li>
+      </ul> 
+    </li>
+    <li nz-menu-item *ngIf="menu.children.length === 0" [routerLink]="[menu.link]">
+      <span title><i nz-icon [type]="menu.icon"></i><span class="nav-text">{{menu.text}}</span></span>
+    </li>
+  </ng-container>
 </ul>
