@@ -4,6 +4,16 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { DwInfoModelComponent } from './meta/dw-info-model/dw-info-model.component';
+import { DwSearchComponent } from './meta/dw-search/dw-search.component';
+import { DwDatePickerComponent } from './meta/dw-date-picker/dw-date-picker.component';
+import { DwTableComponent } from './meta/dw-table/dw-table.component';
+const COMPONENTS = [
+  DwTableComponent,
+  DwInfoModelComponent,
+  DwSearchComponent,
+  DwDatePickerComponent
+];
 const SHAREDS = [
   CommonModule,
   FormsModule,
@@ -14,11 +24,14 @@ const SHAREDS = [
 ];
 @NgModule({
   imports: [
-    ...SHAREDS
+    ...SHAREDS,
   ],
-  declarations: [],
+  declarations: [
+    ...COMPONENTS
+  ],
   exports: [
-    ...SHAREDS
+    ...SHAREDS,
+    ...COMPONENTS
   ]
 })
 export class SharedModule { }

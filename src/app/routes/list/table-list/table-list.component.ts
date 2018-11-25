@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DwTable } from '../../../core/meta/dw-table/dw-table.component';
+import { DwTable } from '../../../shared/meta/dw-table/dw-table.component';
 import { NzNotificationService } from 'ng-zorro-antd';
-import { SearchData } from '../../../core/meta/dw-search/dw-search.component';
-import { DatePicker } from '../../../core/meta/dw-date-picker/dw-date-picker.component';
-import { InfoModel } from '../../../core/meta/dw-info-model/dw-info-model.component';
+import { SearchData } from '../../../shared/meta/dw-search/dw-search.component';
+import { DatePicker } from '../../../shared/meta/dw-date-picker/dw-date-picker.component';
+import { InfoModel } from '../../../shared/meta/dw-info-model/dw-info-model.component';
 
 @Component({
   selector: 'app-table-list',
