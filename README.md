@@ -84,6 +84,6 @@ scp -r  打包后文件路径 root@服务器IP地址：/root/www
 `
 #### 4、域名解析，发布完成
 
-## WECHAT
+## 问题反馈
 
 ![avatar](src/assets/icons/wechat.JPG)
