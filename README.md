@@ -17,6 +17,7 @@
 > * 通用搜索组件 dw-search
 > * 信息模态框 dw-info-model
 > * 分页组件 dw-pagination
+> * 动态表格组件 dw-table-dynamic
 
 ## 项目说明
 
