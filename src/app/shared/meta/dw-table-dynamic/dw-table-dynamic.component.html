@@ -1,0 +1,29 @@
+<nz-table #basicTable [nzData]="tableDatas.dataSet" [nzShowPagination]="false" [nzTitle]="tableDatas?.title" [nzFooter]="tableDatas?.footer"
+  [nzLoading]="tableDatas?.loading" [nzBordered]="tableDatas?.bordered" [nzSize]="tableDatas?.size" [nzPageSize]="tableDatas?.pageSize">
+  <thead>
+    <tr>
+      <th *ngIf="tableDatas?.checked" nzShowCheckbox [(nzChecked)]="allChecked" (nzCheckedChange)="checkAll()"></th>
+      <th *ngFor="let th of tableDatas.dataTh;let i=index">{{th.title}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data;let i = index">
+      <td *ngIf="tableDatas?.checkedSingle" nzShowCheckbox [(nzChecked)]="dataChecked[i].checked" (nzCheckedChange)="refreSingle(i)"></td>
+      <td *ngIf="tableDatas?.checked" nzShowCheckbox [(nzChecked)]="dataChecked[i].checked" (nzCheckedChange)="refreshStatus(i)"></td>
+      <ng-container *ngFor="let tb of tableDatas.tdItem;let i=index">
+        <td>{{data[tb?.name]}}</td>
+      </ng-container>
+      <td *ngIf="tableDatas?.switch" style="text-align: center">
+        <nz-switch [ngModel]="data[tableDatas?.switchName]" nzCheckedChildren="开" nzUnCheckedChildren="关"
+          (ngModelChange)="changeSwitch(data)"></nz-switch>
+      </td>
+      <td>
+        <button nz-button nzType="primary" nzGhost (click)="edit(data)">编辑</button>
+        <nz-divider nzType="vertical"></nz-divider>
+        <button nz-button nzType="danger" nzGhost nz-popconfirm nzTitle="确认删除吗?" (nzOnConfirm)="confirm(data)"
+          (nzOnCancel)="cancel()">删除</button>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+<app-dw-pagination [tableDatas]="tableDatas" (pageIndex)="refreshData($event)" *ngIf="tableDatas?.pagination"></app-dw-pagination>

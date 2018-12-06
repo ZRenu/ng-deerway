@@ -3,6 +3,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { ListRoutingModule } from './list-routing.module';
 import { TableListComponent } from './table-list/table-list.component';
 import { CoreModule } from '../../core/core.module';
+import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 
 @NgModule({
   imports: [
@@ -10,6 +11,6 @@ import { CoreModule } from '../../core/core.module';
     ListRoutingModule,
     CoreModule
   ],
-  declarations: [TableListComponent]
+  declarations: [TableListComponent, TableDynamicComponent]
 })
 export class ListModule { }

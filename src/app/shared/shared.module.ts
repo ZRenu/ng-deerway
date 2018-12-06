@@ -8,11 +8,15 @@ import { DwInfoModelComponent } from './meta/dw-info-model/dw-info-model.compone
 import { DwSearchComponent } from './meta/dw-search/dw-search.component';
 import { DwDatePickerComponent } from './meta/dw-date-picker/dw-date-picker.component';
 import { DwTableComponent } from './meta/dw-table/dw-table.component';
+import { DwTableDynamicComponent } from './meta/dw-table-dynamic/dw-table-dynamic.component';
+import { DwPaginationComponent } from './meta/dw-pagination/dw-pagination.component';
 const COMPONENTS = [
   DwTableComponent,
   DwInfoModelComponent,
   DwSearchComponent,
-  DwDatePickerComponent
+  DwDatePickerComponent,
+  DwTableDynamicComponent,
+  DwPaginationComponent
 ];
 const SHAREDS = [
   CommonModule,
@@ -27,7 +31,7 @@ const SHAREDS = [
     ...SHAREDS,
   ],
   declarations: [
-    ...COMPONENTS
+    ...COMPONENTS,
   ],
   exports: [
     ...SHAREDS,

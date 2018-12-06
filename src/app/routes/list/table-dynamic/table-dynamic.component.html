@@ -1,0 +1,46 @@
+<div class="dynamic-table">
+  <div class="dynamic-table-header">
+    <p>
+      动态表格是结合基础表格和我工作过程总结的经验进行二次封装
+    </p>
+    <div nz-row>
+      <div nz-col nzSpan="6">
+        表格标题： <nz-switch [(ngModel)]="switchTitle" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('title')"></nz-switch>
+      </div>
+      <div nz-col nzSpan="6">
+        表格尾部： <nz-switch [(ngModel)]="switchFooter" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('footer')"></nz-switch>
+      </div>
+      <div nz-col nzSpan="6">
+        页面是否加载中： <nz-switch [(ngModel)]="switchLoading" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('loading')"></nz-switch>
+      </div>
+      <div nz-col nzSpan="6">
+        是否展示外边框和列边框： <nz-switch [(ngModel)]="switchBordered" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('bordered')"></nz-switch>
+      </div>
+    </div>
+    <div nz-row style="margin-top: 20px">
+      <div nz-col nzSpan="6">
+        多选框： <nz-switch [(ngModel)]="switchChecked" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('checked')"></nz-switch>
+      </div>
+      <div nz-col nzSpan="6">
+        单选框： <nz-switch [(ngModel)]="switchCheckedSingle" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('checkedsingle')"></nz-switch>
+      </div>
+      <div nz-col nzSpan="6">
+        状态控制： <nz-switch [(ngModel)]="switchState" nzCheckedChildren="开" nzUnCheckedChildren="关" (click)="clickSwitch('state')"></nz-switch>
+      </div>
+      <div nz-col nzSpan="6">
+        大小：<nz-radio-group [(ngModel)]="size" (click)="sizeClick()">
+          <label nz-radio-button nzValue="default">默认</label>
+          <label nz-radio-button nzValue="middle">中等</label>
+          <label nz-radio-button nzValue="small">小的</label>
+        </nz-radio-group>
+      </div>
+    </div>
+  </div>
+  <app-dw-table-dynamic [tableDatas]="tableDatas" (checked)="checked($event)" (checkedSingle)="checkedSingle($event)"
+    (switch)="switch($event)" (delete)="delete($event)" (editData)="edit($event)" (page)="page($event)">
+  </app-dw-table-dynamic>
+  <div class="dynamic-table-header">
+    注：动态表格关闭了默认分页，用了分页组件，动态表格的操作列表可以根据需要做出调整，动态表格是我根据实际工作进行的封装，在实际开发中会有功能变动，
+    鹿途只对一些通用基础功能进行展示。
+  </div>
+</div>

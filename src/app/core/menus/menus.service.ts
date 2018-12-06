@@ -34,6 +34,11 @@ export class MenusService {
           text: '基础表格',
           link: 'table/list-table',
           icon: '',
+        },
+        {
+          text: '动态控制表格',
+          link: 'table/dynamic-table',
+          icon: '',
         }
       ]
     },

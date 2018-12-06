@@ -1,0 +1,5 @@
+<div class="ps-pagination">
+  <nz-pagination [(nzPageIndex)]="currentPage" [nzTotal]="tableDatas?.total" (nzPageIndexChange)="refreshStatus()"
+    [nzPageSize]="tableDatas?.pageSize"></nz-pagination>
+  <label>共{{tableDatas?.total}}条数据</label>
+</div>
