@@ -11,11 +11,12 @@
 
 > * ECharts
 > * 百度地图
-#### ng-zorro组件二次封装(app/core/meta)
+#### ng-zorro组件二次封装(app/shared/meta)
 > * 基础表格组件 dw-table
 > * 通用时间组件 dw-date-picker
 > * 通用搜索组件 dw-search
 > * 信息模态框 dw-info-model
+> * 分页组件 dw-pagination
 
 ## 项目说明
 
