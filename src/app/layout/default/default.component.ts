@@ -8,11 +8,13 @@ import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 export class DefaultComponent implements OnInit {
   isCollapsed = false;
   triggerTemplate = null;
-
+  date;
   constructor() { }
   launchSidebar() {
     this.isCollapsed = !this.isCollapsed;
   }
   ngOnInit() {
+    const date = new Date();
+    this.date = date.getFullYear();
   }
 }

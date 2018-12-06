@@ -1,18 +1,18 @@
 <nz-layout class="layout">
-    <app-header (nzCollapsed)="launchSidebar()"></app-header>
-    <nz-layout>
-        <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="triggerTemplate">
-            <app-sider [isCollapsed]="isCollapsed"></app-sider>
-        </nz-sider>
-        <nz-layout style="padding:24px 24px 24px;min-height: calc(100vh - 64px);">
-            <nz-content style="background:#fff;">
-                <router-outlet>
-                </router-outlet>
-            </nz-content>
-            <nz-footer style="text-align: center;">
-                树深时见鹿，溪午不闻钟 ©2018 By
-                <a href="https://github.com/ZhouRenYou" target="_blank" style="outline: none;color: #565656">希孟</a>
-            </nz-footer>
-        </nz-layout>
+  <app-header (nzCollapsed)="launchSidebar()"></app-header>
+  <nz-layout>
+    <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="triggerTemplate">
+      <app-sider [isCollapsed]="isCollapsed"></app-sider>
+    </nz-sider>
+    <nz-layout [ngStyle]="{'margin-left':isCollapsed?'80px':'200px'}" class="layout-nz">
+      <nz-content style="background:#fff;">
+        <router-outlet>
+        </router-outlet>
+      </nz-content>
+      <nz-footer style="text-align: center;">
+        树深时见鹿，溪午不闻钟 ©{{date}} By
+        <a href="https://github.com/ZhouRenYou" target="_blank" style="outline: none;color: #565656">希孟</a>
+      </nz-footer>
     </nz-layout>
+  </nz-layout>
 </nz-layout>
