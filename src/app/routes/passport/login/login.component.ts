@@ -46,18 +46,21 @@ export class LoginComponent implements OnInit {
     if (this.form.valid) {
       this.loading = true;
       this.loadingdesc = '登录中...';
-      this.loginApi.login(loginParams)
-        .subscribe(res => {
-          this.loading = false;
-          this.router.navigateByUrl('default/table');
-          // 设置Token信息
-          this.tokenService.set({
-            token: res.token,
-            id: res.id,
-            time: +new Date(),
-          });
-          console.log(res);
-        });
+      if (loginParams.loginId === 'admin' && loginParams.passcode === '12345678') {
+        this.router.navigateByUrl('default/table');
+      }
+      // this.loginApi.login(loginParams)
+      //   .subscribe(res => {
+      //     this.loading = false;
+      //     this.router.navigateByUrl('default/table');
+      //     // 设置Token信息
+      //     this.tokenService.set({
+      //       token: res.token,
+      //       id: res.id,
+      //       time: +new Date(),
+      //     });
+      //     console.log(res);
+      //   });
     }
   }
 

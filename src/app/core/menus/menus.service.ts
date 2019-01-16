@@ -58,6 +58,18 @@ export class MenusService {
           icon: '',
         },
       ]
+    },
+    {
+      text: '实验中心',
+      link: '',
+      icon: 'experiment',
+      children: [
+        {
+          text: '设备报警',
+          link: '/fullscreen/experiment/warining',
+          icon: '',
+        }
+      ]
     }
   ];
   menus() {

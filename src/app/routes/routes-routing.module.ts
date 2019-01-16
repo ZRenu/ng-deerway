@@ -35,8 +35,9 @@ const routes: Routes = [
         path: 'fullscreen',
         component: FullscreenComponent,
         children: [
-            { path: '', redirectTo: 'screen', pathMatch: 'full' },
-            { path: 'screen', loadChildren: './screen/screen.module#ScreenModule' }
+            { path: '', redirectTo: 'experiment', pathMatch: 'full' },
+            { path: 'screen', loadChildren: './screen/screen.module#ScreenModule' },
+            { path: 'experiment', loadChildren: './experiment/experiment.module#ExperimentModule' }
         ]
     },
     /** 登陆布局 */

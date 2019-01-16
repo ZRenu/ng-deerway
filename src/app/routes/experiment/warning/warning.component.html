@@ -1,0 +1,69 @@
+<div id="warning">
+  <div class="warining-header">
+    <div class="warining-header-Slogan">
+      设备监控报警中心
+    </div>
+    <a [routerLink]="['/default/index/info']">主页</a>
+  </div>
+  <div id="main">
+    <div class="warning-row">
+      <div class="warning-row-item" *ngIf="data.length >= 1">
+        <div class="warning-row-item-header">
+          <label>{{data[0]?.time}}</label>
+          <p (click)="close(0)">
+            <i nz-icon type="close" theme="outline" style="font-size: 20px"></i>
+          </p>
+        </div>
+        <div class="warning-row-item-info">
+          {{data[0]?.message}}
+        </div>
+      </div>
+      <div class="warning-row-item" *ngIf="data.length >= 2">
+        <div class="warning-row-item-header">
+          <label>{{data[1]?.time}}</label>
+          <p (click)="close(1)">
+            <i nz-icon type="close" theme="outline" style="font-size: 20px"></i>
+          </p>
+        </div>
+        <div class="warning-row-item-info">
+          {{data[1]?.message}}
+        </div>
+      </div>
+    </div>
+    <div class="warning-row">
+      <div class="warning-row-item" *ngIf="data.length >= 3">
+        <div class="warning-row-item-header">
+          <label>{{data[2]?.time}}</label>
+          <p (click)="close(2)">
+            <i nz-icon type="close" theme="outline" style="font-size: 20px"></i>
+          </p>
+        </div>
+        <div class="warning-row-item-info">
+          {{data[2]?.message}}
+        </div>
+      </div>
+      <div class="warning-row-item" *ngIf="data.length >= 4">
+        <div class="warning-row-item-header">
+          <label>{{data[3]?.time}}</label>
+          <p (click)="close(3)">
+            <i nz-icon type="close" theme="outline" style="font-size: 20px"></i>
+          </p>
+        </div>
+        <div class="warning-row-item-info">
+          {{data[3]?.message}}
+        </div>
+      </div>
+      <div class="warning-row-item" *ngIf="data.length >= 5">
+        <div class="warning-row-item-header">
+          <label>{{data[4]?.time}}</label>
+          <p (click)="close(4)">
+            <i nz-icon type="close" theme="outline" style="font-size: 20px"></i>
+          </p>
+        </div>
+        <div class="warning-row-item-info">
+          {{data[4]?.message}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
