@@ -6,6 +6,10 @@
     <a [routerLink]="['/default/index/info']">主页</a>
   </div>
   <div id="main">
+    <div style="display: flex">
+      <input nz-input placeholder="模拟报警条数" [(ngModel)]="value">
+      <button nz-button nzType="primary" (click)="send()">发送</button>
+    </div>
     <div class="warning-row">
       <div class="warning-row-item" *ngIf="data.length >= 1">
         <div class="warning-row-item-header">
