@@ -10,6 +10,7 @@ import { DwDatePickerComponent } from './meta/dw-date-picker/dw-date-picker.comp
 import { DwTableComponent } from './meta/dw-table/dw-table.component';
 import { DwTableDynamicComponent } from './meta/dw-table-dynamic/dw-table-dynamic.component';
 import { DwPaginationComponent } from './meta/dw-pagination/dw-pagination.component';
+
 const COMPONENTS = [
   DwTableComponent,
   DwInfoModelComponent,

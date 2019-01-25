@@ -14,7 +14,6 @@ import { ApiService, API_URL } from './core/api/api.service';
 import { environment } from '../environments/environment';
 import { DelonAuthModule, SimpleInterceptor } from '@delon/auth';
 import { DelonACLModule } from '@delon/acl';
-
 registerLocaleData(zh);
 
 @NgModule({
@@ -27,14 +26,14 @@ registerLocaleData(zh);
     LayoutModule,
     RoutesModule,
     SharedModule,
-    BrowserAnimationsModule,
     HttpClientModule,
     DelonAuthModule.forRoot(),
-    DelonACLModule.forRoot()
+    DelonACLModule.forRoot(),
+    BrowserAnimationsModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: SimpleInterceptor, multi: true },
-    { provide: NZ_NOTIFICATION_CONFIG, useValue: { nzMaxStack: 1 }},
+    { provide: NZ_NOTIFICATION_CONFIG, useValue: { nzMaxStack: 1 } },
     { provide: NZ_I18N, useValue: zh_CN },
     ApiService,
     {

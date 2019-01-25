@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
 
 declare var echarts: any;
 @Component({
@@ -12,6 +13,8 @@ export class LineComponent implements OnInit {
   resize = (document.body.clientHeight - 181) + 'px';
 
   ngOnInit() {
+    fromEvent(window, 'resize')
+      .subscribe(() => echarts.resize());
     this.chartOption = {
       backgroundColor: '#394056',
       title: {

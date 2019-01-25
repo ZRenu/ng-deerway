@@ -1,0 +1,10 @@
+<div style="display: flex;">
+  <div style="background: #ECECEC;padding:30px;" *ngFor="let hero of heroes" [@flyInOut]="'in'" (click)="removeHero(hero.id)">
+    <nz-card style="width:300px;" [nzBordered]="false" nzTitle="Card title">
+      <span class="badge"> A {{ hero.id }}</span>
+      <span>{{ hero.name }}</span>
+      <p>Touch close</p>
+    </nz-card>
+  </div>
+
+</div>

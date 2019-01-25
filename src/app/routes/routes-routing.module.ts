@@ -27,6 +27,9 @@ const routes: Routes = [
             {
                 path: 'table', loadChildren: './list/list.module#ListModule'
             },
+            {
+                path: 'animations', loadChildren: './animations/animations.module#AnimationsModule'
+            }
 
         ]
     },

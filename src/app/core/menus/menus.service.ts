@@ -43,6 +43,18 @@ export class MenusService {
       ]
     },
     {
+      text: '动画剧场',
+      link: '',
+      icon: 'bank',
+      children: [
+        {
+          text: '官方示例',
+          link: 'animations/animation',
+          icon: '',
+        }
+      ]
+    },
+    {
       text: '百度地图',
       link: '',
       icon: 'compass',
