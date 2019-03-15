@@ -27,7 +27,8 @@ export class WarningComponent implements OnInit {
     console.log('开启服务');
     if (this.ws != null) { this.ws.close(); }
     // this.ws = new WebSocket('ws://localhost:9998/echo');
-    this.ws = new WebSocket('ws://echo.websocket.org');
+    const url = 'ws://192.168.1.89:1300/ws/smokeWebSocketServer/ec194e2d6a924820a80fa11cf6728d82/824f9d03649347998a2fa42797449850';
+    this.ws = new WebSocket(url);
     const that = this;
     this.ws.onopen = function (event) {
       // socket 开启后执行，可以向后端传递信息

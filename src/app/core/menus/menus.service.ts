@@ -48,7 +48,7 @@ export class MenusService {
       icon: 'bank',
       children: [
         {
-          text: '官方示例',
+          text: '动画示例',
           link: 'animations/animation',
           icon: '',
         }

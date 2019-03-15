@@ -1,3 +1,8 @@
-<p>
-  filter works!
-</p>
+<ul class="heroes" [@filterAnimation]="heroTotal">
+  <li *ngFor="let hero of heroes" class="hero">
+    <div class="inner">
+      <span class="badge">{{ hero.id }}</span>
+      <span>{{ hero.name }}</span>
+    </div>
+  </li>
+</ul>
