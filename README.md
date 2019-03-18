@@ -8,9 +8,34 @@
 ## 演示地址(非实时更新)
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
+#### 实现鹿途管理系统系统在线演示功能的方法
 
-> * ECharts
-> * 百度地图
+1、新建一个Github空项目，比如本项目的发布仓库web-deerway
+
+2、angular-cli生成一个新项目
+
+3、安装angular-cli-ghpages包 
+
+`npm install angular-cli-ghpages -g`
+
+4、打包项目代码，并设置项目链接地址
+
+`
+ng build --prod --base-href "https://zhourenyou.github.io/发布仓库项目名称/"
+`
+
+5、初始化git
+
+`git init
+`
+
+`git remote add origin [url]`
+
+6、发布（默认push到gh-pages分支上）
+
+`
+ngh
+`
 #### ng-zorro组件二次封装(app/shared/meta)
 > * 基础表格组件 dw-table
 > * 通用时间组件 dw-date-picker
@@ -87,3 +112,4 @@ ng build --prod
 scp -r  打包后文件路径 root@服务器IP地址：/root/www
 `
 #### 4、域名解析，发布完成
+
