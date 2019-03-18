@@ -5,7 +5,7 @@
 
 ## 资料中心
 [博客园——鹿途](https://www.cnblogs.com/zry2510/category/1096539.html)
-## 演示地址(非实时更新)
+## 演示地址(提示：演示项目非实时更新，演示项目操作表格功能时，数据变动请关注console)
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
 #### 实现鹿途管理系统系统在线演示功能的方法
