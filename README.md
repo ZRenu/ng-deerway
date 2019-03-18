@@ -36,13 +36,6 @@ ng build --prod --base-href "https://zhourenyou.github.io/发布仓库项目名�
 `
 ngh
 `
-#### ng-zorro组件二次封装(app/shared/meta)
-> * 基础表格组件 dw-table
-> * 通用时间组件 dw-date-picker
-> * 通用搜索组件 dw-search
-> * 信息模态框 dw-info-model
-> * 分页组件 dw-pagination
-> * 动态表格组件 dw-table-dynamic
 
 ## 项目说明
 
@@ -76,6 +69,14 @@ npm install ng-zorro-antd --save
 > * shared   导入导出项目公用的引用
 > * styles   通用样式
 > * assets   静态资源（图片与图标）
+
+## ng-zorro组件二次封装(app/shared/meta)
+> * 基础表格组件 dw-table
+> * 通用时间组件 dw-date-picker
+> * 通用搜索组件 dw-search
+> * 信息模态框 dw-info-model
+> * 分页组件 dw-pagination
+> * 动态表格组件 dw-table-dynamic
 
 ### 用户认证
 
