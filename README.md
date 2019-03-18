@@ -5,7 +5,7 @@
 
 ## 资料中心
 [博客园——鹿途](https://www.cnblogs.com/zry2510/category/1096539.html)
-## 演示地址(非实时更新)
+## 演示地址(首次提交内容，实际功能以最新代码为准)
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
 
