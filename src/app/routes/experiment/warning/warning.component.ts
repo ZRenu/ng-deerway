@@ -18,7 +18,7 @@ export class WarningComponent implements OnInit {
   ngOnInit() {
     this.start();
     // this.webSocket();
-    this.connectWs();
+    // this.connectWs();
   }
   send() {
     this.ws.send(this.value);
