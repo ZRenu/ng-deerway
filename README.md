@@ -9,6 +9,8 @@
 
 [DEMO](https://zhourenyou.github.io/web-deerway/)
 
+[实现鹿途系统在线演示功能的方法](https://www.zhourenyou.com/2019/03/25/ng-page/#more)
+
 ## 项目说明
 
 ## 开始
