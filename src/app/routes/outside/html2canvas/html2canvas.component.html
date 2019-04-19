@@ -4,7 +4,7 @@
     <nz-option *ngFor="let option of styles" [nzLabel]="option.label" [nzValue]="option.value">
     </nz-option>
   </nz-select>
-  <button nz-button nzType="primary" [nzSize]="size" nzShape="round" (click)="saveImgLocal()"><i nz-icon type="download"></i>导出</button>
+  <button nz-button nzType="primary"  nzShape="round" (click)="saveImgLocal()"><i nz-icon type="download"></i>导出</button>
   (更新了版本，导出的图片部分样式丢死，不兼容svg，emmmm...以前好像没问题,再议，再议)
   <!-- <button nz-button nzType="primary" [nzSize]="size" nzShape="round" (click)="download()"><i nz-icon type="download"></i>导出</button> -->
 </div>
