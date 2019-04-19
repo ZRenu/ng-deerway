@@ -28,6 +28,7 @@
     "core-js": "^2.5.4",
     "date-fns": "^1.29.0",
     "echarts": "^4.2.0-rc.1",
+    "html2canvas": "^1.0.0-alpha.10",
     "ng-zorro-antd": "^1.8.0",
     "ngx-echarts": "^4.0.0",
     "rxjs": "^6.0.0",
