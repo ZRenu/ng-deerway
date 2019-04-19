@@ -72,6 +72,18 @@ export class MenusService {
       ]
     },
     {
+      text: '插件工坊',
+      link: '',
+      icon: 'usb',
+      children: [
+        {
+          text: 'html2canvas',
+          link: 'outside/html2canvas',
+          icon: '',
+        }
+      ]
+    },
+    {
       text: '实验中心',
       link: '',
       icon: 'experiment',

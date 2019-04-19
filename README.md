@@ -88,7 +88,31 @@ scp -r  打包后文件路径 root@服务器IP地址：/root/www
 `
 #### 4、域名解析，发布完成
 
+## 快捷指令
 
+快速生成模块
+
+`
+ng g m [保存位置]/modelName
+`
+
+快速生成模版
+
+`
+ng g c [保存位置]/componentName
+`
+
+快速生产服务
+
+`
+ng g s [保存位置]/serviceName
+`
+
+快速生产管道
+
+`
+ng g pipe [保存位置]/pipeName
+`
 ## 非重要说明
 
 Vue3.0正式发布后，对应的Vue版本也安排上，先挖个坑😎

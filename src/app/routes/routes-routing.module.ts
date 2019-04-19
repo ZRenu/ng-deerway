@@ -29,6 +29,9 @@ const routes: Routes = [
             },
             {
                 path: 'animations', loadChildren: './animations/animations.module#AnimationsModule'
+            },
+            {
+                path: 'outside', loadChildren: './outside/outside.module#OutsideModule'
             }
 
         ]
