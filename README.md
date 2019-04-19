@@ -96,7 +96,7 @@ scp -r  打包后文件路径 root@服务器IP地址：/root/www
 ng g m [保存位置]/modelName
 `
 
-快速生成模版
+快速生成组件
 
 `
 ng g c [保存位置]/componentName
