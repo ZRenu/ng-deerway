@@ -219,7 +219,7 @@ export class MarkerComponent implements OnInit, OnDestroy {
       + '<a style="display:flex;flex-direction:column;height:30px;align-items:center;font-weight:bolder;line-height:30px;border:1px solid #666666;color:#1f871f">位置</a>'
       + '</div>'
       + '<div style="height:400px;width:158px;padding-top:42px">'
-      + '<a style="display:flex;flex-direction:column;height:30px;align-items:center;font-weight:bolder;line-height:30px;border:1px solid #666666;color:#777777">' + '希孟' + '</a>'
+      + '<a style="display:flex;flex-direction:column;height:30px;align-items:center;font-weight:bolder;line-height:30px;border:1px solid #666666;color:#777777">' + '星河' + '</a>'
       + '<a style="display:flex;flex-direction:column;height:30px;align-items:center;font-weight:bolder;line-height:30px;border:1px solid #666666;color:#777777">' + point.lat + '</a>'
       + '<a style="display:flex;flex-direction:column;height:30px;align-items:center;font-weight:bolder;line-height:30px;border:1px solid #666666;color:#777777">' + point.lng + '</a>'
       + '<a style="display:flex;flex-direction:column;height:30px;align-items:center;font-weight:bolder;line-height:30px;border:1px solid #666666;color:#777777">' + '鹿途后台管理系统' + '</a>'
