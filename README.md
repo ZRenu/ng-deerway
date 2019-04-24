@@ -116,7 +116,5 @@ ng g s [保存位置]/serviceName
 `
 ng g pipe [保存位置]/pipeName
 `
-## 非重要说明
 
-Vue3.0正式发布后，对应的Vue版本也安排上，先挖个坑😎
 
