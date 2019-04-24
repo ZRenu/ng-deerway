@@ -2,7 +2,8 @@
 ## 准备工作
 * 安装 angular 环境
 * 安装 ng-zorro 依赖
-
+## 即开即用
+[鹿途系统基础框架](https://github.com/ZhouRenYou/ng-project)：这是鹿途管理系统一个干净基础的框架，即开即用，如果你觉得方便，就给我一个小星星吧 😊
 ## 资料中心
 
 [博客园——鹿途](https://www.cnblogs.com/zry2510/category/1096539.html)
