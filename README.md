@@ -87,10 +87,6 @@ ng g pipe [保存位置]/pipeName
 
 [@delon/auth](https://ng-alain.com/auth/getting-started)
 
-### 权限控制
-
-[@delon/acl](https://ng-alain.com/acl/getting-started/zh)
-
 ## 第三方资源
 
 图标：[iconfont](http://iconfont.cn)
