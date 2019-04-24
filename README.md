@@ -38,6 +38,34 @@ npm install ng-zorro-antd --save
 
 `ng s -c [environment] --port [port]`
 
+
+## 快捷指令
+
+快速生成模块
+
+`
+ng g m [保存位置]/modelName
+`
+
+快速生成组件
+
+`
+ng g c [保存位置]/componentName
+`
+
+快速生产服务
+
+`
+ng g s [保存位置]/serviceName
+`
+
+快速生产管道
+
+`
+ng g pipe [保存位置]/pipeName
+`
+
+
 ## 项目结构
 
 > * core ng-zorro组件二次封装 通用服务、管道以及通用验证
@@ -90,31 +118,5 @@ ng build --prod
 scp -r  打包后文件路径 root@服务器IP地址：/root/www
 `
 #### 4、域名解析，发布完成
-
-## 快捷指令
-
-快速生成模块
-
-`
-ng g m [保存位置]/modelName
-`
-
-快速生成组件
-
-`
-ng g c [保存位置]/componentName
-`
-
-快速生产服务
-
-`
-ng g s [保存位置]/serviceName
-`
-
-快速生产管道
-
-`
-ng g pipe [保存位置]/pipeName
-`
 
 
