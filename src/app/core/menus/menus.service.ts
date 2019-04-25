@@ -32,12 +32,17 @@ export class MenusService {
       children: [
         {
           text: '基础表格',
-          link: 'table/list-table',
+          link: 'list/list-table',
           icon: '',
         },
         {
           text: '动态控制表格',
-          link: 'table/dynamic-table',
+          link: 'list/dynamic-table',
+          icon: '',
+        },
+        {
+          text: '菜单管理',
+          link: 'list/tree',
           icon: '',
         }
       ]

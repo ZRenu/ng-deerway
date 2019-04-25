@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
       this.loading = true;
       this.loadingdesc = '登录中...';
       if (loginParams.loginId === 'admin' && loginParams.passcode === '12345678') {
-        this.router.navigateByUrl('default/table');
+        this.router.navigateByUrl('default/list');
       }
       // this.loginApi.login(loginParams)
       //   .subscribe(res => {

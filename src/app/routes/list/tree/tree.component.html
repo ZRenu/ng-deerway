@@ -1,0 +1,25 @@
+<div class="btn">
+  <button nz-button nzType="primary">新增</button>
+  <button nz-button nzType="primary">编辑</button>
+  <button nz-button nzType="primary">删除</button>
+</div>
+<div class="tree">
+  <div class="menu">
+    <input type="text" nz-input placeholder="请输入筛选项" [(ngModel)]="searchValue" />
+    <nz-tree #treeCom [nzData]="nodes" nzShowIcon="true" (nzClick)="nzEvent($event)"
+      (nzSearchValueChange)="searchNode($event)" [nzSearchValue]="searchValue">
+    </nz-tree>
+  </div>
+  <div style="width: 80%">
+    <div class="tree-table">
+      <p>标题: {{title}}</p>
+      <p>图标: icon</p>
+      <p>排序: 1</p>
+      <p>资源路径: list/table</p>
+      <p>描述: </p>
+    </div>
+    <div class="tree-btn">
+      <label>按钮资源</label>
+    </div>
+  </div>
+</div>

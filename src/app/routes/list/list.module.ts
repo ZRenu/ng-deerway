@@ -4,6 +4,7 @@ import { ListRoutingModule } from './list-routing.module';
 import { TableListComponent } from './table-list/table-list.component';
 import { CoreModule } from '../../core/core.module';
 import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
+import { TreeComponent } from './tree/tree.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,6 @@ import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
     ListRoutingModule,
     CoreModule
   ],
-  declarations: [TableListComponent, TableDynamicComponent]
+  declarations: [TableListComponent, TableDynamicComponent, TreeComponent]
 })
 export class ListModule { }

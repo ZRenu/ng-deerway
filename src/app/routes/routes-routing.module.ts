@@ -14,7 +14,7 @@ const routes: Routes = [
         component: DefaultComponent,
         // canActivate: [ACLGuard],
         children: [
-            { path: '', redirectTo: 'table', pathMatch: 'full' },
+            { path: '', redirectTo: 'list', pathMatch: 'full' },
             {
                 path: 'index', loadChildren: './index/index.module#IndexModule'
             },
@@ -25,7 +25,7 @@ const routes: Routes = [
                 path: 'charts', loadChildren: './charts/charts.module#ChartsModule'
             },
             {
-                path: 'table', loadChildren: './list/list.module#ListModule'
+                path: 'list', loadChildren: './list/list.module#ListModule'
             },
             {
                 path: 'animations', loadChildren: './animations/animations.module#AnimationsModule'
