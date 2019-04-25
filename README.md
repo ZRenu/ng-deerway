@@ -95,10 +95,6 @@ ng g pipe [保存位置]/pipeName
 
 图表：[echarts](http://echarts.baidu.com/index.html)
 
-## 实验中心
-
-此模块是一些技术尝试或者一些小DEMO
-
 ## 部署
 
 #### 1、打包

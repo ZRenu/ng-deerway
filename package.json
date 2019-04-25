@@ -32,6 +32,7 @@
     "ng-zorro-antd": "^1.8.0",
     "ngx-echarts": "^4.0.0",
     "rxjs": "^6.0.0",
+    "seamscroll": "0.0.12",
     "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"
   },

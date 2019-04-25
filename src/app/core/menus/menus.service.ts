@@ -84,10 +84,15 @@ export class MenusService {
       ]
     },
     {
-      text: '实验中心',
+      text: '全屏中心',
       link: '',
       icon: 'experiment',
       children: [
+        {
+          text: 'Demo',
+          link: '/fullscreen/experiment/demo',
+          icon: '',
+        },
         {
           text: '设备报警',
           link: '/fullscreen/experiment/warining',
