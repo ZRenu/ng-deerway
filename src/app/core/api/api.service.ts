@@ -32,4 +32,15 @@ export class ApiService {
       withCredentials: true
     });
   }
+  /**全域打印 */
+  isConsole(...args) {
+    // switch (args.length) {
+    //   case 1:
+    //     console.log(args[0]);
+    //     break;
+    //   case 2:
+    //     console.log(args[0], args[1]);
+    // }
+
+  }
 }

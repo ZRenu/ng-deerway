@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { ApiService } from 'src/app/core/api/api.service';
 declare var require: any;
 @Component({
   selector: 'app-demo',
@@ -9,7 +10,9 @@ export class DemoComponent implements OnInit, AfterViewInit {
   seamless: any;
   width: '1740px';
   data = [];
-  constructor() { }
+  constructor(
+    private api: ApiService
+  ) { }
 
   ngOnInit() {
     this.seamless = require('seamscroll');
@@ -30,5 +33,7 @@ export class DemoComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit(): void {
     this.start();
+    this.api.isConsole('e', this.data);
   }
+
 }
