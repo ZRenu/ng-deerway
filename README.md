@@ -1,4 +1,6 @@
 # 鹿途后台管理系统
+
+## [Live](https://zhourenyou.github.io/web-deerway/) 
 ## 准备工作
 * 安装 angular 环境
 * 安装 ng-zorro 依赖
@@ -13,9 +15,6 @@
 [实现鹿途系统在线演示功能的方法](https://www.zhourenyou.com/2019/03/25/ng-page/#more)
 
 #### 项目操作表格功能时，数据变动请关注console
-
-[Live](https://zhourenyou.github.io/web-deerway/) 
-
 
 ## 项目说明
 
