@@ -82,8 +82,13 @@ export class MenusService {
       icon: 'usb',
       children: [
         {
-          text: 'html2canvas',
+          text: '表单打印',
           link: 'outside/html2canvas',
+          icon: '',
+        },
+        {
+          text: '二维码',
+          link: 'outside/qrious',
           icon: '',
         }
       ]

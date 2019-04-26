@@ -1,0 +1,11 @@
+<div class="qrious">
+  <p>
+    基于<a href="https://github.com/neocotic/qrious" target="_blank">qrious</a>生成二维码。
+  </p>
+  <p>简单用法</p>
+  <h2>{{ type }}</h2>
+  <canvas id="qr"></canvas>
+  <div style="margin:20px 0">
+    <button *ngFor="let t of types" nz-button (click)="change(t)">{{ t }}</button>
+  </div>
+</div>
