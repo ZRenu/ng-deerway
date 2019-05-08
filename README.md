@@ -1,7 +1,10 @@
 # 鹿途后台管理系统
 
-## [Live](https://zhourenyou.github.io/web-deerway/) 
+## [Live 鹿途后台管理系统](https://zhourenyou.github.io/web-deerway/) 
 #### 项目操作表格功能时，数据变动请关注console
+## 模版
+## [Live 鹿途智慧牧场](https://meadow.netlify.com)
+## [鹿途智慧牧场仓库](https://github.com/ZhouRenYou/angular-meadow)
 ## 准备工作
 * 安装 angular 环境
 * 安装 ng-zorro 依赖
