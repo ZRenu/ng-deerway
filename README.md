@@ -2,14 +2,17 @@
 
 ## [Live 鹿途后台管理系统](https://zhourenyou.github.io/web-deerway/) 
 #### 项目操作表格功能时，数据变动请关注console
-## 模版
-## [Live 鹿途智慧牧场](https://meadow.netlify.com)
-## [鹿途智慧牧场仓库](https://github.com/ZhouRenYou/angular-meadow)
+
 ## 准备工作
 * 安装 angular 环境
 * 安装 ng-zorro 依赖
-## 即开即用
-[鹿途系统基础框架](https://github.com/ZhouRenYou/ng-project)：这是鹿途管理系统一个干净基础的框架，即开即用，如果你觉得方便，就给我一个小星星吧 😊
+# 项目资源
+
+## 模版
+
+## [Live 智慧牧场](https://meadow.netlify.com)
+## [Angular6基础框架](https://github.com/ZhouRenYou/ng-project)
+
 ## 文档
 
 [博客园——鹿途](https://www.cnblogs.com/zry2510/category/1096539.html)
@@ -70,6 +73,15 @@ ng g s [保存位置]/serviceName
 ng g pipe [保存位置]/pipeName
 `
 
+## 项目引用
+
+地图：[maps](http://lbsyun.baidu.com/)
+
+图表：[echarts](http://echarts.baidu.com/index.html)
+
+用户认证：[@delon/auth](https://ng-alain.com/auth/getting-started)
+
+项目框架：[ng-zorro](https://ng.ant.design/version/1.8.x/)
 
 ## 项目结构
 
@@ -87,18 +99,6 @@ ng g pipe [保存位置]/pipeName
 > * 信息模态框 dw-info-model
 > * 分页组件 dw-pagination
 > * 动态表格组件 dw-table-dynamic
-
-### 用户认证
-
-[@delon/auth](https://ng-alain.com/auth/getting-started)
-
-## 第三方资源
-
-图标：[iconfont](http://iconfont.cn)
-
-地图：[angular-baidu-maps](https://github.com/cipchk/angular-baidu-maps)
-
-图表：[echarts](http://echarts.baidu.com/index.html)
 
 ## 部署
 
