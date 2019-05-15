@@ -19,6 +19,8 @@
 
 [基于qrious生成二维码](https://www.zhourenyou.com/2019/04/26/qrious/)
 
+[关于开发环境与生产环境跨域](https://www.zhourenyou.com/2019/05/15/angular-cross-domain/)
+
 [实现鹿途系统在线演示功能的方法](https://www.zhourenyou.com/2019/03/25/ng-page/#more)
 
 
