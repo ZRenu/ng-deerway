@@ -4,6 +4,7 @@ import { MapRoutingModule } from './map-routing.module';
 import { SharedModule } from '../../shared/shared.module';
 import { StartComponent } from './start/start.component';
 import { AbmModule } from 'angular-baidu-maps';
+import { MapDemoComponent } from './map-demo/map-demo.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AbmModule } from 'angular-baidu-maps';
   ],
   declarations: [
     MarkerComponent,
-    StartComponent
+    StartComponent,
+    MapDemoComponent
   ]
 })
 export class MapModule { }

@@ -74,6 +74,11 @@ export class MenusService {
           link: 'map/marker',
           icon: '',
         },
+        {
+          text: '地图围栏',
+          link: 'map/demo',
+          icon: '',
+        },
       ]
     },
     {

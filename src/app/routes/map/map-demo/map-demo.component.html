@@ -1,0 +1,14 @@
+<div class="mapdemo">
+  <div>
+    <p>牧场名称：{{data?.farmName}}</p>
+    <!-- <p>牧场围栏范围预览</p> -->
+    <p>暂无牧场围栏范围，请绘制</p>
+    <button nz-button nzType="primary" (click)="save()">确认范围</button>
+    <button nz-button nzType="primary" (click)="update()">编辑范围</button>
+    <button nz-button nzType="primary" (click)="clear()">重新绘制</button>
+  </div>
+  <div class="ponit">
+    <div id="scopeMap"></div>
+  </div>
+
+</div>
