@@ -1,7 +1,8 @@
 # 鹿途后台管理系统
 
+## 项目停止维护，请访问重构后的新项目[NG-PAWD](https://github.com/ZRenu/ng-sunPawd)
 ## [基于Ant Design实现的Angular、Vue通用后台设计框架](https://github.com/ZhouRenYou/SunrayAD) 
-## [Live 鹿途后台管理系统](https://zhourenyou.github.io/web-deerway/) 
+## [Live 鹿途后台管理系统](https://deerway.netlify.com/) 
 #### 项目操作表格功能时，数据变动请关注console
 
 ## 准备工作
